@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		095400A7194FB3D80058398A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 095400A6194FB3D80058398A /* Default-568h@2x.png */; };
 		097105DA194F8E8200521A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097105D9194F8E8200521A5E /* Foundation.framework */; };
 		097105DC194F8E8200521A5E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097105DB194F8E8200521A5E /* CoreGraphics.framework */; };
 		097105DE194F8E8200521A5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097105DD194F8E8200521A5E /* UIKit.framework */; };
@@ -14,13 +15,15 @@
 		097105E6194F8E8200521A5E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 097105E5194F8E8200521A5E /* main.m */; };
 		097105EA194F8E8200521A5E /* MyPlacesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 097105E9194F8E8200521A5E /* MyPlacesAppDelegate.m */; };
 		097105ED194F8E8200521A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097105EB194F8E8200521A5E /* Main.storyboard */; };
-		097105F0194F8E8200521A5E /* MyPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097105EF194F8E8200521A5E /* MyPlacesViewController.m */; };
+		097105F0194F8E8200521A5E /* MyPlacesAddPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097105EF194F8E8200521A5E /* MyPlacesAddPlaceViewController.m */; };
 		097105F2194F8E8200521A5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097105F1194F8E8200521A5E /* Images.xcassets */; };
 		097105F9194F8E8200521A5E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097105F8194F8E8200521A5E /* XCTest.framework */; };
 		097105FA194F8E8200521A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097105D9194F8E8200521A5E /* Foundation.framework */; };
 		097105FB194F8E8200521A5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 097105DD194F8E8200521A5E /* UIKit.framework */; };
 		09710603194F8E8200521A5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09710601194F8E8200521A5E /* InfoPlist.strings */; };
 		09710605194F8E8200521A5E /* MyPlacesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09710604194F8E8200521A5E /* MyPlacesTests.m */; };
+		09BE8C4219508A5800F48D9A /* MyPlacesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE8C4119508A5800F48D9A /* MyPlacesListTableViewController.m */; };
+		09BE8C451950E8C600F48D9A /* MyPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE8C441950E8C600F48D9A /* MyPlace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		095400A1194FB36E0058398A /* icon120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon120x120.png; path = ../images/icon120x120.png; sourceTree = "<group>"; };
+		095400A2194FB3770058398A /* icon80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon80x80.png; path = ../images/icon80x80.png; sourceTree = "<group>"; };
+		095400A3194FB3800058398A /* icon58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon58x58.png; path = ../images/icon58x58.png; sourceTree = "<group>"; };
+		095400A4194FB3A00058398A /* launch640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch640x960.png; path = ../images/launch640x960.png; sourceTree = "<group>"; };
+		095400A5194FB3AD0058398A /* launch640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch640x1136.png; path = ../images/launch640x1136.png; sourceTree = "<group>"; };
+		095400A6194FB3D80058398A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		097105D6194F8E8200521A5E /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097105D9194F8E8200521A5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		097105DB194F8E8200521A5E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +54,18 @@
 		097105E8194F8E8200521A5E /* MyPlacesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPlacesAppDelegate.h; sourceTree = "<group>"; };
 		097105E9194F8E8200521A5E /* MyPlacesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlacesAppDelegate.m; sourceTree = "<group>"; };
 		097105EC194F8E8200521A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		097105EE194F8E8200521A5E /* MyPlacesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPlacesViewController.h; sourceTree = "<group>"; };
-		097105EF194F8E8200521A5E /* MyPlacesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlacesViewController.m; sourceTree = "<group>"; };
+		097105EE194F8E8200521A5E /* MyPlacesAddPlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPlacesAddPlaceViewController.h; sourceTree = "<group>"; };
+		097105EF194F8E8200521A5E /* MyPlacesAddPlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlacesAddPlaceViewController.m; sourceTree = "<group>"; };
 		097105F1194F8E8200521A5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		097105F7194F8E8200521A5E /* MyPlacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		097105F8194F8E8200521A5E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		09710600194F8E8200521A5E /* MyPlacesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyPlacesTests-Info.plist"; sourceTree = "<group>"; };
 		09710602194F8E8200521A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09710604194F8E8200521A5E /* MyPlacesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPlacesTests.m; sourceTree = "<group>"; };
+		09BE8C4019508A5800F48D9A /* MyPlacesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlacesListTableViewController.h; sourceTree = "<group>"; };
+		09BE8C4119508A5800F48D9A /* MyPlacesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlacesListTableViewController.m; sourceTree = "<group>"; };
+		09BE8C431950E8C600F48D9A /* MyPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPlace.h; sourceTree = "<group>"; };
+		09BE8C441950E8C600F48D9A /* MyPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPlace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +125,13 @@
 		097105DF194F8E8200521A5E /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				097105E8194F8E8200521A5E /* MyPlacesAppDelegate.h */,
-				097105E9194F8E8200521A5E /* MyPlacesAppDelegate.m */,
 				097105EB194F8E8200521A5E /* Main.storyboard */,
-				097105EE194F8E8200521A5E /* MyPlacesViewController.h */,
-				097105EF194F8E8200521A5E /* MyPlacesViewController.m */,
+				097105EE194F8E8200521A5E /* MyPlacesAddPlaceViewController.h */,
+				097105EF194F8E8200521A5E /* MyPlacesAddPlaceViewController.m */,
+				09BE8C4019508A5800F48D9A /* MyPlacesListTableViewController.h */,
+				09BE8C4119508A5800F48D9A /* MyPlacesListTableViewController.m */,
+				09BE8C431950E8C600F48D9A /* MyPlace.h */,
+				09BE8C441950E8C600F48D9A /* MyPlace.m */,
 				097105F1194F8E8200521A5E /* Images.xcassets */,
 				097105E0194F8E8200521A5E /* Supporting Files */,
 			);
@@ -126,6 +141,14 @@
 		097105E0194F8E8200521A5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				095400A6194FB3D80058398A /* Default-568h@2x.png */,
+				095400A5194FB3AD0058398A /* launch640x1136.png */,
+				095400A4194FB3A00058398A /* launch640x960.png */,
+				095400A3194FB3800058398A /* icon58x58.png */,
+				095400A2194FB3770058398A /* icon80x80.png */,
+				095400A1194FB36E0058398A /* icon120x120.png */,
+				097105E8194F8E8200521A5E /* MyPlacesAppDelegate.h */,
+				097105E9194F8E8200521A5E /* MyPlacesAppDelegate.m */,
 				097105E1194F8E8200521A5E /* MyPlaces-Info.plist */,
 				097105E2194F8E8200521A5E /* InfoPlist.strings */,
 				097105E5194F8E8200521A5E /* main.m */,
@@ -199,6 +222,9 @@
 				CLASSPREFIX = MyPlaces;
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					097105D5194F8E8200521A5E = {
+						DevelopmentTeam = 682FBBK9D9;
+					};
 					097105F6194F8E8200521A5E = {
 						TestTargetID = 097105D5194F8E8200521A5E;
 					};
@@ -229,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				097105F2194F8E8200521A5E /* Images.xcassets in Resources */,
+				095400A7194FB3D80058398A /* Default-568h@2x.png in Resources */,
 				097105E4194F8E8200521A5E /* InfoPlist.strings in Resources */,
 				097105ED194F8E8200521A5E /* Main.storyboard in Resources */,
 			);
@@ -250,8 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				097105EA194F8E8200521A5E /* MyPlacesAppDelegate.m in Sources */,
-				097105F0194F8E8200521A5E /* MyPlacesViewController.m in Sources */,
+				097105F0194F8E8200521A5E /* MyPlacesAddPlaceViewController.m in Sources */,
+				09BE8C451950E8C600F48D9A /* MyPlace.m in Sources */,
 				097105E6194F8E8200521A5E /* main.m in Sources */,
+				09BE8C4219508A5800F48D9A /* MyPlacesListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +346,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -355,7 +385,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -374,8 +405,7 @@
 		09710609194F8E8200521A5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyPlaces/MyPlaces-Prefix.pch";
 				INFOPLIST_FILE = "MyPlaces/MyPlaces-Info.plist";
@@ -387,8 +417,8 @@
 		0971060A194F8E8200521A5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christian Marenco F (TUMUPUT4BW)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyPlaces/MyPlaces-Prefix.pch";
 				INFOPLIST_FILE = "MyPlaces/MyPlaces-Info.plist";
@@ -456,6 +486,7 @@
 				0971060A194F8E8200521A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0971060B194F8E8200521A5E /* Build configuration list for PBXNativeTarget "MyPlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +495,7 @@
 				0971060D194F8E8200521A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

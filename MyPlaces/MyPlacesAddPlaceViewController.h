@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyPlace.h"
 
-@interface MyPlacesViewController : UIViewController
+@interface MyPlacesAddPlaceViewController : UIViewController
+
+@property MyPlace *place;
+
 
 @end
